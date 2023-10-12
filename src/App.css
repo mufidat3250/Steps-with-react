@@ -1,0 +1,47 @@
+.steps{
+  background-color: white;
+  width: 25rem;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: dimgrey;
+}
+.numbers{
+  display: flex;
+  justify-content: space-between;
+}
+
+.steps .numbers > div{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background-color: #e7e7e7;
+}
+
+.steps > p{
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.prev-next{
+  display: flex;
+  justify-content: space-between;
+}
+.prev-next button{
+  padding: 0.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  cursor: pointer; 
+  background-color: #7950f2;
+  color: white; 
+}
+
+.numbers > div.active{
+  background-color:#7950f2;
+  color: white;
+}
+
