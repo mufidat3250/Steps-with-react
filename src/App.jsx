@@ -11,6 +11,7 @@ const messages = [
 
 function App() {
   const [step, setStep] = useState(0) 
+  const [isOpen, setIsOpen] = useState(true)
 
   const handleNext = () => {
     if(step < 3) {
@@ -26,7 +27,11 @@ function App() {
 
  
   return (
-   <div className='steps'>
+  <div className='app'>
+    <div className='close' onClick={()=> setIsOpen(!isOpen)}>&times;</div>
+
+    <div className='steps-wrapper'>
+    {isOpen &&  <div className='steps'>
     <div className='numbers'>
         <div className={step >= 1 ? 'active':'' }>1</div>
         <div className={step >= 2 ? 'active' : ''}>2</div>
@@ -37,7 +42,9 @@ function App() {
       <button onClick={handlePrev}>Previous</button>
       <button onClick={handleNext}>Next</button>
     </div>
-   </div>
+   </div>}
+    </div>
+  </div>
   )
 }
 

@@ -1,3 +1,14 @@
+.app{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.steps-wrapper{
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
 .steps{
   background-color: white;
   width: 25rem;
@@ -42,5 +53,14 @@
 
 .numbers > div.active{
   background-color:#7950f2;
+  color: white;
+}
+
+.close{
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: right;
+  padding: 1rem 3rem 1rem;
+  cursor: pointer;
   color: white;
 }
